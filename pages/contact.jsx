@@ -4,7 +4,6 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 import { HiMail, HiUser } from "react-icons/hi";
 import { BsChatTextFill } from "react-icons/bs";
-import Fiverr_Icon from "../components/Fiverr_Icon";
 import Footer from "../components/Footer";
 import { Modal } from "antd";
 import { CONTACTS, DETAILS, NAME, SOCIAL_LINKS } from "../constants/constants";
@@ -57,7 +56,7 @@ const Contact = () => {
         <div className="h-16 w-full card_stylings text-xl sm:text-3xl flex gap-x-8 sm:gap-x-16 items-center justify-center text-Snow">
           <a
             className="hover:scale-125 ease-in-out duration-700"
-            href={`mailto:${CONTACTS.EMAIL}`}
+            href={`mailto:${CONTACTS.EMAIL || ""}`}
             target="_blank"
             rel="noreferrer"
           >
