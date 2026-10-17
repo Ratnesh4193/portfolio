@@ -70,6 +70,7 @@ export default function RootLayout({
           geist.variable,
           geistMono.variable
         )}
+        suppressHydrationWarning
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>

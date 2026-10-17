@@ -53,6 +53,7 @@ export default function NumberTicker({
     <span
       className={cn("inline-block tabular-nums", className)}
       ref={ref}
+      suppressHydrationWarning
     >
       0
     </span>

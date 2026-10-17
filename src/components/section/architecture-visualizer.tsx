@@ -129,13 +129,18 @@ export default function ArchitectureVisualizer() {
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-2 p-1 bg-muted/60 dark:bg-muted/30 rounded-xl border border-border/80">
+      <div
+        className="flex flex-wrap gap-2 p-1 bg-muted/60 dark:bg-muted/30 rounded-xl border border-border/80"
+        suppressHydrationWarning
+      >
         {ARCHITECTURES.map((arch) => {
           const Icon = arch.icon;
           const isActive = activeTab.id === arch.id;
           return (
             <button
               key={arch.id}
+              type="button"
+              suppressHydrationWarning
               onClick={() => setActiveTab(arch)}
               className={cn(
                 "flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium transition-all duration-200 cursor-pointer flex-1 sm:flex-none justify-center",
