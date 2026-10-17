@@ -74,7 +74,7 @@ export default async function BlogPage({
                           <span className="group-hover:text-foreground transition-colors">
                             {post.title}
                             <ChevronRight
-                              className="ml-1 inline-block size-4 stroke-3 text-muted-foreground opacity-0 -translate-x-2 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0"
+                              className="ml-1 inline-block size-4 stroke-3 text-muted-foreground opacity-60 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-1"
                               aria-hidden
                             />
                           </span>

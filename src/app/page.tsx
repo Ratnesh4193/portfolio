@@ -240,7 +240,7 @@ export default function Page() {
                       <div className="font-semibold leading-none flex items-center gap-2 text-sm sm:text-base">
                         {education.school}
                         <ArrowUpRight
-                          className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200"
+                          className="h-3.5 w-3.5 text-muted-foreground opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
                           aria-hidden
                         />
                       </div>
